@@ -70,6 +70,23 @@ server.route({
 })
 
 server.route({
+    method: 'POST', path: '/api/student',
+    handler: function( req, reply ){
+        console.log('/api/student', req.params, req.payload)
+        server.seneca.act(
+            'student:entry',
+            {student:req.payload},
+            function(err,out) {
+                console.log('/api/student', err, out)
+
+                if( err ) return reply.redirect('/error')
+
+                reply.redirect(req.payload.from)
+            }
+        )}
+})
+
+server.route({
   method: 'POST', path: '/api/post/{user}',
   handler: function( req, reply ){
 
