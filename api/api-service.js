@@ -86,37 +86,12 @@ server.route({
         )}
 })
 
-server.route({
-  method: 'POST', path: '/api/post/{user}',
-  handler: function( req, reply ){
-
-      console.log('/api/post A', req.params, req.payload)
-      
-    server.seneca.act(
-      'post:entry',
-      {user:req.params.user, text:req.payload.text},
-      function(err,out) {
-	  console.log('/api/post B', err, out)
-
-	  if( err ) return reply.redirect('/error')
-
-        reply.redirect(req.payload.from)
-      }
-    )}
-})
 
 server.route({
-  method: 'POST', path: '/api/follow/{user}',
-  handler: function( req, reply ){
-    server.seneca.act(
-      'follow:user',
-      {user:req.params.user, target:req.payload.user},
-      function(err,out) {
-        if( err ) return reply.redirect('/error')
-
-        reply.redirect(req.payload.from)
-      }
-    )}
+    method: 'GET', path: '/backend',
+    handler: {
+        wo: {}
+    }
 })
 
 
