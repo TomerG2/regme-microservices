@@ -7,31 +7,11 @@ front:
 api:
   build: ../api
 post:
+  build: ../student
+post:
   build: ../post
 entry_store:
   build: ../entry-store
-entry_cache:
-  build: ../entry-cache
-repl:
-  build: ../repl
-mine:
-  build: ../mine
-home:
-  build: ../home
-index:
-  build: ../index
-search:
-  build: ../search
-follow:
-  build: ../follow
-fanout:
-  build: ../fanout
-timeline0:
-  build: ../timeline
-timeline1:
-  build: ../timeline
-timeline_shard:
-  build: ../timeline
 reserve:
   build: ../reserve
 
