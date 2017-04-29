@@ -25,10 +25,10 @@ module.exports = {
     front: { 
       run: 'node front.js '+HOST+' '+BASES+' '+OPTS,
     },
-    frontend: {
+    register: {
         run: 'node register-service.js '+HOST+' '+BASES+' '+OPTS,
     },
-    backend: {
+    admin: {
         run: 'node admin-service.js '+HOST+' '+BASES+' '+OPTS,
     }
   }

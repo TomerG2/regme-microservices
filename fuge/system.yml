@@ -1,19 +1,19 @@
 base0:
-  build: ../base
+  build: ../services/base
 base1:
-  build: ../base
+  build: ../services/base
 front:
-  build: ../front
-frontend:
-  build: ../register
-backend:
-  build: ../admin
+  build: ../views/front
+register:
+  build: ../views/register
+admin:
+  build: ../views/admin
 api:
-  build: ../api
+  build: ../services/api
 student:
-  build: ../student
+  build: ../services/student
 student_store:
-  build: ../student-store
+  build: ../services/student-store
 
 
 
