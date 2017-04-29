@@ -35,11 +35,11 @@ server.register({
   register:chairo,
   options:{
     seneca: Seneca({
-      tag: 'backend',
+      tag: 'register',
       internal: {logger: require('seneca-demo-logger')},
       debug: {short_logs:true}
     })
-      .use('entity')
+        .use('entity')
   }
 })
 
@@ -48,7 +48,7 @@ server.register({
   options:{
     bases: BASES,
     route: [
-        {path: '/backend'},
+        {path: '/register'},
     ],
     sneeze: {
       host: host,
@@ -67,25 +67,10 @@ server.views({
 
 
 server.route({
-  method: 'GET', path: '/',
+  method: 'GET', path: '/register',
   handler: function( req, reply )
   {
-    server.seneca.act(
-      'store:list,kind:student',
-      {user:req.params.user},
-      function( err, entrylist ) {
-        if(err) {
-          entrylist = []
-        }
-
-        reply.view('backend',{
-          user: req.params.user,
-          entrylist: _.map(entrylist,function(entry){
-            entry.when = moment(entry.when).fromNow()
-            return entry
-          })
-        })
-      })
+      reply.view('register')
   }
 })
 
@@ -96,7 +81,7 @@ server.seneca.use('mesh',{
 })
 
 server.start(function(){
-  console.log('backend',server.info.host,server.info.port)
+  console.log('register',server.info.host,server.info.port)
 })
 
 

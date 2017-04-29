@@ -88,7 +88,7 @@ server.route({
 
 
 server.route({
-    method: 'GET', path: '/backend',
+    method: 'GET', path: '/admin',
     handler: {
         wo: {}
     }

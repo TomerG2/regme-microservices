@@ -5,9 +5,9 @@ base1:
 front:
   build: ../front
 frontend:
-  build: ../frontend
+  build: ../register
 backend:
-  build: ../backend
+  build: ../admin
 api:
   build: ../api
 student:
