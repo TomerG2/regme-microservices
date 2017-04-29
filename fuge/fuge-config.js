@@ -19,6 +19,9 @@ module.exports = {
     student: {
         run: 'node student-service.js '+HOST+' '+BASES+' '+OPTS,
     },
+    student_store: {
+        run: 'node student-store-servicee.js '+HOST+' '+BASES+' '+OPTS,
+    },
     post: {
       run: 'node post-service.js '+HOST+' '+BASES+' '+OPTS,
     },
