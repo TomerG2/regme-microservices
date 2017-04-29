@@ -27,7 +27,7 @@ From within the repository folder, run the fuge shell.
 $ fuge shell fuge/system.yml
 ```
 
-This will start fuge, output some logging messages about the ramanujan services, and then place you in an interactive repl:
+This will start fuge and output some logging messages:
 
 ```sh
 ...
@@ -35,11 +35,8 @@ starting shell..
 ? fuge>
 ```
 
-Enter the command `help` to see a list of commands. Useful commands
-are `ps` to list the status of the services (try it!), and `exit` to
-shutdown all services and exit. If your system state becomes corrupted
-in some way (this often happens during development due to bugs in
-microservices), exit fuge completely and restart the fuge shell.
+Useful commands are `ps` to list the status of the services.
+`exit` to shutdown all services and exit.
 
 #### Step 4: Start up the system
 
