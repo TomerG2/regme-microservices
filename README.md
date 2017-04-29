@@ -9,16 +9,11 @@ Follow the instructions at [fuge repository](https://github.com/apparatus/fuge).
 
 #### Step 1: Clone the repository
 
-Use git to clone the repository to a local development folder of your choice
-
 ```sh
 $ git clone https://github.com/TomerG2/regme-microservices.git
 ```
 
 #### Step 2: Download dependencies
-
-The system needs a number of Node.js modules from npmjs.org to
-function correctly. These are the only external dependencies.
 
 ```sh
 $ npm install
@@ -48,7 +43,7 @@ microservices), exit fuge completely and restart the fuge shell.
 
 #### Step 4: Start up the system
 
-To start the system, use the fuge command:
+Start the system:
 
 ```sh
 ...
