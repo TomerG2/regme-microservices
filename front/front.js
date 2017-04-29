@@ -40,6 +40,15 @@ server.route({
 })
 
 server.route({
+    method: 'POST', path: '/api/student',
+    handler: {
+        wo: {
+            passThrough: true
+        }
+    }
+})
+
+server.route({
   method: 'POST', path: '/api/post/{user}', 
   handler: {
     wo: {
