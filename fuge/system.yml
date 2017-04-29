@@ -4,6 +4,10 @@ base1:
   build: ../base
 front:
   build: ../front
+frontend:
+  build: ../frontend
+backend:
+  build: ../backend
 api:
   build: ../api
 post:
