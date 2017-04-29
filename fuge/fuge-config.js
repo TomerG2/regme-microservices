@@ -26,10 +26,10 @@ module.exports = {
       run: 'node front.js '+HOST+' '+BASES+' '+OPTS,
     },
     frontend: {
-        run: 'node frontend.js '+HOST+' '+BASES+' '+OPTS,
+        run: 'node frontend-service.js '+HOST+' '+BASES+' '+OPTS,
     },
     backend: {
-        run: 'node backend.js '+HOST+' '+BASES+' '+OPTS,
+        run: 'node backend-service.js '+HOST+' '+BASES+' '+OPTS,
     }
   }
 };
