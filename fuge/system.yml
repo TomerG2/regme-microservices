@@ -10,7 +10,7 @@ backend:
   build: ../backend
 api:
   build: ../api
-post:
+student:
   build: ../student
 student_store:
   build: ../student-store

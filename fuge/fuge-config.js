@@ -20,7 +20,7 @@ module.exports = {
         run: 'node student-service.js '+HOST+' '+BASES+' '+OPTS,
     },
     student_store: {
-        run: 'node student-store-servicee.js '+HOST+' '+BASES+' '+OPTS,
+        run: 'node student-store-service.js '+HOST+' '+BASES+' '+OPTS,
     },
     front: { 
       run: 'node front.js '+HOST+' '+BASES+' '+OPTS,
