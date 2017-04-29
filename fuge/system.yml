@@ -12,7 +12,7 @@ api:
   build: ../api
 post:
   build: ../student
-post:
+student_store:
   build: ../student-store
 
 
