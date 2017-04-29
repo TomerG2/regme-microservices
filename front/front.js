@@ -49,48 +49,6 @@ server.route({
 })
 
 server.route({
-  method: 'POST', path: '/api/post/{user}', 
-  handler: {
-    wo: {
-      passThrough: true
-    }
-  }
-})
-
-server.route({
-  method: 'POST', path: '/api/follow/{user}', 
-  handler: {
-    wo: {
-      passThrough: true
-    }
-  }
-})
-
-
-server.route({ 
-  method: 'GET', path: '/mine/{user}', 
-  handler: {
-    wo: {}
-  }
-})
-
-
-server.route({ 
-  method: ['GET','POST'], path: '/search/{user}', 
-  handler: {
-    wo: {}
-  }
-})
-
-
-server.route({ 
-  method: 'GET', path: '/{user}', 
-  handler: {
-    wo: {}
-  }
-})
-
-server.route({
   path: '/favicon.ico',
   method: 'get',
   config: {
