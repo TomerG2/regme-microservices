@@ -10,12 +10,6 @@ post:
   build: ../student
 post:
   build: ../student-store
-post:
-  build: ../post
-entry_store:
-  build: ../entry-store
-reserve:
-  build: ../reserve
 
 
 
