@@ -1,48 +1,21 @@
-# regme-microservices
+# RegMe-Microservices - Porting Monolith to Microservices using Senecajs
 
-## Running regme with fuge
+## Overview
+### This project aims to port a monolithic project to nodejs using Senecajs microservices framework.
 
-#### Step 0: Install fuge
+## Road Map
+#### 1. Reorganize folder structure - Done.
+#### 2. Replace fuge with pm2
+#### 3. Implement basic working workflow.
+#### 4. Implement seneca-auth & seneca-user.
+#### 5. Replace in memorey storage with persistant-db.
 
-Follow the instructions at [fuge repository](https://github.com/apparatus/fuge).
+## Business Requirements
+### A registration system for various HR events.
+### Enable registration on mobile devices.
+### Enable CV uploading after successful registration.
+### Enable setting filter rules for "Golden Ticket", for prime candidates.
+### A dashboard in order to view & search registrations.
 
+## Mapping to Messages - TODO
 
-#### Step 1: Clone the repository
-
-```sh
-$ git clone https://github.com/TomerG2/regme-microservices.git
-```
-
-#### Step 2: Download dependencies
-
-```sh
-$ npm install
-```
-
-#### Step 3: Run fuge
-
-From within the repository folder, run the fuge shell.
-
-```sh
-$ fuge shell fuge/system.yml
-```
-
-This will start fuge and output some logging messages:
-
-```sh
-...
-starting shell..
-? fuge>
-```
-
-Useful commands are `ps` to list the status of the services.
-`exit` to shutdown all services and exit.
-
-#### Step 4: Start up the system
-
-Start the system:
-
-```sh
-...
-? fuge> start all
-```
