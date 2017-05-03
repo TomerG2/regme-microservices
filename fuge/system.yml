@@ -1,0 +1,20 @@
+base0:
+  build: ../services/base
+base1:
+  build: ../services/base
+front:
+  build: ../views/front
+register:
+  build: ../views/register
+admin:
+  build: ../views/admin
+api:
+  build: ../services/api
+student:
+  build: ../services/student
+student_store:
+  build: ../services/student-store
+
+
+
+
